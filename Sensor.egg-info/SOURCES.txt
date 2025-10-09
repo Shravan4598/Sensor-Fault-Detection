@@ -1,6 +1,12 @@
+LICENSE
+README.md
 setup.py
 Sensor.egg-info/PKG-INFO
 Sensor.egg-info/SOURCES.txt
 Sensor.egg-info/dependency_links.txt
 Sensor.egg-info/top_level.txt
 sensor/__init__.py
+sensor/config.py
+sensor/exception.py
+sensor/logger.py
+sensor/utils.py

@@ -1,4 +1,9 @@
-pymongo==4.2.0
+pymongo[srv]==4.2.0
+pandas
+numpy
+scikit-learn
+pymongo
+python-dotenv
 
 -e . #editable mode -> setup file ko baar baar install krne ki jarurat nhi hai ye automatically run kar deta hai
 
