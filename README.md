@@ -1,1 +1,1 @@
-# Sensor-Faut-Detection
+# Sensor-Fault-Detection
