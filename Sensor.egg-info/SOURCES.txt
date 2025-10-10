@@ -26,7 +26,6 @@ sensor/constant/database.py
 sensor/constant/env_variable.py
 sensor/constant/s3_bucket.py
 sensor/constant/training_pipeline/__init__.py
-sensor/constant/training_pipeline/training_pipeline.py
 sensor/data_access/__init__.py
 sensor/data_access/sensor_data.py
 sensor/entity/__init__.py
