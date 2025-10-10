@@ -4,6 +4,8 @@ numpy
 scikit-learn
 pymongo
 python-dotenv
+PyYAML
+dill
 
 -e . #editable mode -> setup file ko baar baar install krne ki jarurat nhi hai ye automatically run kar deta hai
 
