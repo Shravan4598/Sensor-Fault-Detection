@@ -206,5 +206,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-artifacts/
+artifact/
 saved_models/
