@@ -1,5 +1,4 @@
 # Sensor-Fault-Detection
-# Sensor-Fault-Detection
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -267,7 +266,7 @@ The training pipeline is a sequence of components that progressively turn raw se
 - `sensor/components/model_trainer.py`
 
 **Diagram**
-![Model Trainer](Flowcharts/4_Sensor_Model Trainer Component.png)
+![Model Trainer](Flowcharts/4_Sensor_Model_Trainer_Component.png)
 
 ---
 
@@ -296,7 +295,7 @@ The training pipeline is a sequence of components that progressively turn raw se
 - `sensor/components/model_evaluation.py`
 
 **Diagram**
-![Model Evaluation](Flowcharts/5_Sensor Model Evaluation Component.png)
+![Model Evaluation](Flowcharts/5_Sensor_Model_Evaluation_Component.png)
 
 ---
 
@@ -323,7 +322,7 @@ The training pipeline is a sequence of components that progressively turn raw se
 - `sensor/components/model_pusher.py`
 
 **Diagram**
-![Model Pusher](Flowcharts/6_Sensor Model Pusher Component.png)
+![Model Pusher](Flowcharts/6_Sensor_Model_Pusher_Component.png)
 
 ---
 
@@ -560,4 +559,4 @@ Sensor-Fault-Detection/
 
 ## License
 
-See [LICENSE](LICENSE).
+See [LICENSE](https://github.com/Shravan4598/Sensor-Fault-Detection/blob/main/LICENSE).
