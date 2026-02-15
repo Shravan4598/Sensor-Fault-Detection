@@ -70,6 +70,7 @@ The total cost of a prediction model is:
 
 
 Total Cost = Cost_1 *(Number of Type-1 Failures) + Cost_2 * (Number of Type-2 Failures)
+Total Cost = 10 *(Number of Type-1 Failures) + 500 * (Number of Type-2 Failures)
 
 
 Where, in this context:
