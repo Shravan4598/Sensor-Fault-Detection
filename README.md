@@ -38,18 +38,51 @@
 
 ## Problem Statement
 
-In heavy-duty trucks, the **Air Pressure System (APS)** is critical for safe operation. Failures in APS-related components can lead to:
-- **Unexpected breakdowns** and vehicle downtime
-- **Higher maintenance costs**
-- **Operational disruption** (missed deliveries, delays)
+## Problem Statement
 
-This project tackles **APS failure prediction**: given a set of sensor signals, predict whether a failure is likely due to APS-related components.
+**Data:** Sensor Data
 
-Key real-world challenges typically present in this problem:
-- **Rare failures (class imbalance):** failures are much less frequent than normal operation.
-- **Missing/dirty sensor data:** many sensor readings may be unavailable or unreliable.
-- **Cost sensitivity:** false negatives (missing a real failure) can be more expensive than false positives (unnecessary inspection).
+### APS Failure Prediction Context
+- The system in focus is the **Air Pressure System (APS)**, which generates pressurized air used in various truck functions such as **braking** and **gear changes**.
+- The dataset **positive class** corresponds to **component failures for a specific component of the APS system**.
+- The dataset **negative class** corresponds to **trucks with failures for components not related to the APS system**.
 
+### Objective (Cost Reduction)
+The goal is to **reduce the cost due to unnecessary repairs**, so it is required to **minimize false predictions**.
+
+### Cost-Sensitive Errors
+Misclassification costs are defined as:
+
+- **Cost_1 = 10**: cost of an **unnecessary check** by a mechanic at a workshop  
+- **Cost_2 = 500**: cost of **missing a faulty truck**, which may cause a breakdown  
+
+#### Confusion/Cost Matrix (Cost Perspective)
+
+| True Class \ Predicted Class | Positive | Negative |
+|---|---:|---:|
+| **Positive** | — | **cost_2** |
+| **Negative** | **cost_1** | — |
+
+### Total Cost
+The total cost of a prediction model is:
+
+$$
+\text{Total\_cost} = Cost_1 \times \#(\text{Type-1 failures}) + Cost_2 \times \#(\text{Type-2 failures})
+$$
+
+Where, in this context:
+- **Type-1** corresponds to **false positives** (unnecessary workshop check)
+- **Type-2** corresponds to **false negatives** (missed APS-related failure)
+
+### Key Takeaway
+From the above, we must reduce both **false positives** and **false negatives**.  
+However, it is **more important to reduce false negatives**, since the cost incurred due to a false negative is **50× higher** than the cost of a false positive.
+
+### Challenges and Other Objectives
+- Need to handle **many null values** in almost all columns
+- **No low-latency requirement**
+- **Interpretability is not important**
+- Misclassification leads to **unnecessary repair costs**
 ---
 
 ## Solution Summary
