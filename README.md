@@ -38,8 +38,6 @@
 
 ## Problem Statement
 
-## Problem Statement
-
 **Data:** Sensor Data
 
 ### APS Failure Prediction Context
@@ -66,9 +64,14 @@ Misclassification costs are defined as:
 ### Total Cost
 The total cost of a prediction model is:
 
-$$
-\text{Total\_cost} = Cost_1 \times \#(\text{Type-1 failures}) + Cost_2 \times \#(\text{Type-2 failures})
-$$
+### Total Cost
+
+The total cost of a prediction model is:
+
+If you want it inline instead:
+
+\(\text{Total\_cost} = \text{Cost\_1} \times \#(\text{Type-1 failures}) + \text{Cost\_2} \times \#(\text{Type-2 failures})\)
+
 
 Where, in this context:
 - **Type-1** corresponds to **false positives** (unnecessary workshop check)
