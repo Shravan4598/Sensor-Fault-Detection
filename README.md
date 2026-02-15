@@ -68,9 +68,8 @@ The total cost of a prediction model is:
 
 The total cost of a prediction model is:
 
-If you want it inline instead:
 
-\(\text{Total\_cost} = \text{Cost\_1} \times \#(\text{Type-1 failures}) + \text{Cost\_2} \times \#(\text{Type-2 failures})\)
+Total Cost = Cost_1 *(Number of Type-1 Failures) + Cost_2 * (Number of Type-2 Failures)
 
 
 Where, in this context:
