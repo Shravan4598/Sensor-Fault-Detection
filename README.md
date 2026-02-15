@@ -1,4 +1,5 @@
 # Sensor-Fault-Detection
+![Project Architecture](Flowcharts/SensorFaultAPS.png)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
