@@ -8,7 +8,7 @@ setup(
     name="Sensor",
     version="0.0.1",
     author="Shravan Kumar Pandey",
-    author_email="shravankumarpandy825412@gmail.com",
+    author_email="shravankumarpandey825412@gmail.com",
     packages=find_packages(),
     install_requires=get_requirements(),
 
