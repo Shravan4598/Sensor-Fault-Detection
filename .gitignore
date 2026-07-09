@@ -215,3 +215,23 @@ Notebook
 # Jupyter Notebooks
 *.ipynb
 .ipynb_checkpoints/
+# Jupyter
+*.ipynb
+Notebook/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+Sensor.egg-info/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
