@@ -210,3 +210,5 @@ artifact/
 saved_models/
 Sensor.egg-info/
 Notebook/
+Sensor.egg-info
+Notebook
