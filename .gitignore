@@ -212,3 +212,6 @@ Sensor.egg-info/
 Notebook/
 Sensor.egg-info
 Notebook
+# Jupyter Notebooks
+*.ipynb
+.ipynb_checkpoints/
